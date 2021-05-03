@@ -10,7 +10,8 @@ import javax.persistence.*;
 @Getter @Setter
 public class Member {
     @Id @GeneratedValue
-    private Long memberId;
+    @Column(name="member_id")
+    private Long id;
     private String name;
     private String phone;
     private String email;

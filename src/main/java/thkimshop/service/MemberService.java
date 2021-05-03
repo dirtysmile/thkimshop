@@ -22,7 +22,7 @@ public class MemberService {
         validateDuplicateMember(member); // 중복 회
         memberRepository.save(member);
 
-        return member.getMemberId();
+        return member.getId();
     }
 
     private void validateDuplicateMember(Member member) {
